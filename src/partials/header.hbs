@@ -1,0 +1,83 @@
+{{!-- Header section block --}}
+
+{{!-- <header class="header">
+  <div id="sticky-header" class="unfixed">
+    <div class="inner">
+      {{>logo logo1='images/logo.png' logo2=''}}
+
+      <div class="nav-menu">
+        <nav class="main-nav-container">
+          <ul class="main-nav header-nav">
+            <li><a href="{{root}}about-page.html">About Me</a></li>
+            <li><a href="#">The Goal</a></li>
+            <li><a href="{{root}}faq-page.html">FAQ</a></li>
+            <li><a href="{{root}}blog-page.html">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="second-nav-container">
+          <ul class="second-nav">
+            <li class="sing-in-link"><a href="#">Sign In</a></li>
+            <li class="btn-link"><a href="#">Become a Member</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <button class="menu-toggle" id="open-button">Menu</button>
+    </div>
+  </div>
+</header> --}}
+
+<header class="header header-authorized">
+  <div id="sticky-header" class="unfixed">
+      <div class="row">
+        <div class="inner">
+          {{>logo logo1='images/logo.png' logo2=''}}
+
+          <div class="nav-menu">
+            <nav class="main-nav-container">
+            <ul class="main-nav header-nav">
+              <li><a href="{{root}}about-page.html">About Me</a></li>
+              <li><a href="#">The Goal</a></li>
+              <li><a href="{{root}}faq-page.html">FAQ</a></li>
+              <li><a href="{{root}}blog-page.html">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li>               
+                <div class="avatar">
+                  <div class="avatar-preview">
+                    <img src="{{root}}images/avatar.png" alt="" />
+                  </div>
+                  <div class="avatar-dropdown">
+                    <ul>
+                      <li><a href="#">Member Dashboard</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Profile</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="menu-toggle" id="open-button">Menu</button>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="inner">
+          <nav class="second-nav-container">
+            <ul class="second-nav">
+              <li><a href="#">Member Dashboard</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </div>
+</header>

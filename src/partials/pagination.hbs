@@ -1,0 +1,17 @@
+{{!-- You can include first and last links by specifying the first_last parameter in true --}}
+{{!-- Sample {{> pagination first_last=true}} --}}
+<ul class="page-numbers">
+  {{#if first_last}}
+    <li><a href="#" class="first-page">Previous</a></li>
+  {{/if}}
+  <li><a class="prev page-numbers" href="#">Previous</a></li>
+  <li><a class="page-numbers" href="#">1</a></li>
+  <li><span aria-current="page" class="page-numbers current">2</span></li>
+  <li><a class="page-numbers" href="#">3</a></li>
+  <li><span class="page-numbers dots">…</span></li>
+  <li><a class="page-numbers" href="#">68</a></li>
+  <li><a class="next page-numbers" href="#">Next</a></li>
+  {{#if first_last}}
+    <li><a href="#" class="last-page">Last Page</a></li>
+  {{/if}}
+</ul>

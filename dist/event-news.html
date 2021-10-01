@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script>
+    ( function( a, b, c, d ) {
+      c = '';
+      for ( let i = 0; i < b; i++ ) {
+        if ( 'fontLoaderCss' === localStorage.key( i ).substring( 0, 13 ) ) {
+          c += "\r\n" + localStorage.getItem( localStorage.key( i ) );
+        }
+      }
+
+      if ( c ) {
+        d = a.createElement( 'style' );
+        d.rel = 'stylesheet';
+        a.head.appendChild( d );
+        d.textContent = c;
+      }
+    } )( document, localStorage.length );
+  </script>
+  <link rel="stylesheet" href="css/styles.css" id="theme-styles-css">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Your Organization Name",
+      "url": "http://www.example.com",
+      "logo": "http://www.example.com/images/logo.png",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-111-111-1111",
+          "contactType": "customer service"
+        }
+      ],
+      "sameAs": [
+        "http://www.facebook.com/your-profile",
+        "http://www.twitter.com/yourProfile",
+        "http://plus.google.com/your_profile"
+      ]
+    }
+  </script>
+</head>
+<body class="">
+  <div class="container">
+    <aside class="menu-wrap" aria-hidden="true">
+    
+      <ul class="main-nav mobile-nav mobile-nav-authorized">
+        <li><a href="about-page.html">About Me</a></li>
+        <li><a href="#">The Goal</a></li>
+        <li><a href="faq-page.html">FAQ</a></li>
+        <li><a href="blog-page.html">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="sing-in-link"><a href="#">Sign In</a></li>
+        <li class="btn-link"><a href="#">Become a Member</a></li>
+      </ul>
+    
+      <button class="close-button" id="close-button">Close Menu</button>
+    </aside>
+    <div class="content-wrap">
+      
+      
+      <header class="header header-authorized">
+        <div id="sticky-header" class="unfixed">
+            <div class="row">
+              <div class="inner">
+                <div class="logo">
+                  <a href="/">
+                    <img src="images/logo.png" alt="">
+                  </a>
+                </div>
+      
+                <div class="nav-menu">
+                  <nav class="main-nav-container">
+                  <ul class="main-nav header-nav">
+                    <li><a href="about-page.html">About Me</a></li>
+                    <li><a href="#">The Goal</a></li>
+                    <li><a href="faq-page.html">FAQ</a></li>
+                    <li><a href="blog-page.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>               
+                      <div class="avatar">
+                        <div class="avatar-preview">
+                          <img src="images/avatar.png" alt="" />
+                        </div>
+                        <div class="avatar-dropdown">
+                          <ul>
+                            <li><a href="#">Member Dashboard</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Logout</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <button class="menu-toggle" id="open-button">Menu</button>
+              </div>
+            </div>
+      
+      
+            <div class="row">
+              <div class="inner">
+                <nav class="second-nav-container">
+                  <ul class="second-nav">
+                    <li><a href="#">Member Dashboard</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class='archive-section'>
+  <div class='inner'>
+    <div class='title'>
+      <h1 class='page-title'>
+        News &amp; Events
+      </h1>
+    </div>
+    <div class='wrap'>
+      <div class='sidebar'>
+        <div class='archive-list-block'>
+          <form
+            role='search'
+            method='get'
+            class='search-form'
+            action='http://redstoneortho.devbucket.me/'
+          >
+            <label>
+              <span class='screen-reader-text'>
+                Search for:
+              </span>
+              <input
+                type='search'
+                class='search-field'
+                placeholder='Search …'
+                value=''
+                name='s'
+              />
+            </label>
+            <input type='submit' class='search-submit' value='Search' />
+          </form>
+        </div>
+        <div class='archive-list-block'>
+          <h2 class='archive-title'>
+            Archives
+          </h2>
+          <ul>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/10/'>
+                October 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/09/'>
+                September 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/08/'>
+                August 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/07/'>
+                July 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/06/'>
+                June 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/05/'>
+                May 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/04/'>
+                April 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/03/'>
+                March 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/02/'>
+                February 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2017/01/'>
+                January 2017
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/12/'>
+                December 2016
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/11/'>
+                November 2016
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/10/'>
+                October 2016
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/09/'>
+                September 2016
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/08/'>
+                August 2016
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/07/'>
+                July 2016
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/06/'>
+                June 2016
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/05/'>
+                May 2016
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/04/'>
+                April 2016
+              </a>
+            </li>
+            <li>
+              <a href='http://redstoneortho.devbucket.me/2016/03/'>
+                March 2016
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class='archive-list-block'>
+          <h2 class='archive-title'>
+            Categories
+          </h2>
+          <ul>
+            <li class='cat-item cat-item-1'>
+              <a
+                href='http://redstoneortho.devbucket.me/category/uncategorized/'
+              >
+                Uncategorized
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='content text-content'>
+        <div class='main-blog'>
+          <div class='item'>
+            <div class='thumbnail' style='background-image: url();'>
+              <a href='http://redstoneortho.devbucket.me/post-1/'></a>
+            </div>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-1/'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit 1
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - October 2, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-1/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class='item'>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-2/'>
+                  Donec eget fringilla orci 2
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - September 11, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-2/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class='item'>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-3/'>
+                  Duis interdum mi non sem imperdiet, sollicitudin malesuada ex ultrices 3
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - August 12, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-3/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class='item'>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-4/'>
+                  Vivamus dui eros 4
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - July 23, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-4/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class='item'>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-5/'>
+                  Mollis non venenatis sit amet 5
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - June 1, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-5/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class='item'>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-6/'>
+                  Maximus nec tortor 6
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - May 22, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-6/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class='item'>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-7/'>
+                  Praesent viverra dignissim dapibus 7
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - April 2, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-7/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class='item'>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-8/'>
+                  Curabitur rhoncus scelerisque maximus 8
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - March 21, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-8/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class='item'>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-9/'>
+                  Nulla tincidunt ex sapien, sit amet sollicitudin quam dapibus ac 9
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - February 16, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-9/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class='item'>
+            <div class='text'>
+              <div class='categories'>
+                <a
+                  href='http://redstoneortho.devbucket.me/category/uncategorized/'
+                  rel='category tag'
+                >
+                  Uncategorized
+                </a>
+              </div>
+              <h2 class='title'>
+                <a href='http://redstoneortho.devbucket.me/post-10/'>
+                  Sed rhoncus erat id nulla tempor 10
+                </a>
+              </h2>
+              <div class='posted'>
+                Posted - January 9, 2017
+              </div>
+              <div class='item-content'>
+                Header oneHeader twoHeader threeHeader fourHeader fiveHeader sixLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+                <a
+                  href='http://redstoneortho.devbucket.me/post-10/'
+                  class='more'
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='pagination'>
+          <ul class='page-numbers'>
+            <li>
+              <span aria-current='page' class='page-numbers current'>
+                1
+              </span>
+            </li>
+            <li>
+              <a
+                class='page-numbers'
+                href='http://redstoneortho.devbucket.me/news-events/page/2/'
+              >
+                2
+              </a>
+            </li>
+            <li>
+              <a
+                class='next page-numbers'
+                href='http://redstoneortho.devbucket.me/news-events/page/2/'
+              >
+                Next »
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      
+      <footer class="footer">
+        <div class="inner">
+          <h2 class="title">Lorem ipsum dolor sit amet</h2>
+          <div class="form">
+      
+        <div class="gf_browser_chrome gform_wrapper "
+             id="gform_wrapper_58">  
+          <form method="post" enctype="multipart/form-data" id="gform_58"
+                class=""
+                action="/">
+            
+            <div class="gform_body">
+              <ul class="gform_fields top_label form_sublabel_below description_below">
+                        
+                        <li class="gfield  gf_left_half gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible"> 
+                          <label class="gfield_label" for="input_58_1">
+                            <span class="gfield_required">*</span>
+                          </label>
+                          <div class="ginput_container ginput_container_text">
+                            <input
+                                    name="input_1"
+                                    id="input_58_1"
+                                    type="text"
+                                    value=""
+                                    class=""
+                                    placeholder="Name"
+                                    aria-required="true"
+                                    aria-invalid="false"
+                            > 
+                          </div>
+                        </li>
+                        
+                        <li class="gfield  gf_right_half gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
+                          <label class="gfield_label" for="input_58_2">
+                            <span class="gfield_required">*</span>
+                          </label>
+                          <div class="ginput_complex ginput_container ginput_container_email">
+                              <input
+                                      name="input_2"
+                                      id="input_58_2"
+                                      type="email" value=""
+                                      class=""
+                                      placeholder="Email"
+                                      aria-required="true"
+                                      aria-invalid="false"
+                              > 
+                          </div>
+                        </li>
+                        
+                        <li class="gfield  test-class gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible"> 
+                          <label class="gfield_label" for="input_58_3">
+                            <span class="gfield_required">*</span>
+                          </label>
+                          <div class="ginput_container ginput_container_textarea">
+                        		<textarea
+                                    name="input_3"
+                                    id="input_58_3"
+                                    class="textarea medium"
+                                    placeholder="Message"
+                                    aria-required="true"
+                                    aria-invalid="false"
+                                    rows="10"
+                                    cols="50"
+                            ></textarea>
+                              <div class="charleft ginput_counter warningTextareaInfo">1 of  max characters</div>
+                          </div>
+                        </li>
+              </ul>
+            </div>
+                  <div class="gform_footer top_label">
+                  
+                      <input type='submit' class='gform_button button' value='What’s on your mind?'
+                             onclick='if(window["gf_submitting_58"]){return false;}  window["gf_submitting_58"]=true;  '
+                             onkeypress='if( event.keyCode === 13 ){ if(window["gf_submitting_58"]){return false;} window["gf_submitting_58"]=true;  jQuery("#gform_58").trigger("submit",[true]); }'>
+                  
+                    <input type='hidden' class='gform_hidden' name='is_submit_58' value='1'>
+                    <input type='hidden' class='gform_hidden' name='gform_submit' value='58'>
+                    <input type='hidden' class='gform_hidden' name='gform_unique_id' value=''>
+                    <input type='hidden' class='gform_hidden' name='state_58'
+                           value='WyJbXSIsIjI4ZTYyMGI3NzdjMzJjM2JkN2YyNzZkNzZlMWNhNWIzIl0='>
+                    <input type='hidden' class='gform_hidden' name='gform_target_page_number_58'
+                           id='gform_target_page_number_58'
+                           value='0'>
+                    <input type='hidden' class='gform_hidden' name='gform_source_page_number_58'
+                           id='gform_source_page_number_58'
+                           value='1'>
+                    <input type='hidden' name='gform_field_values' value=''>
+                  </div>
+          </form>
+        </div>
+          </div>
+          <div class="wrap">
+            <div class="col">
+              <div class="logo">
+                  <img src="images/logo-footer.png" alt="" />
+              </div>
+            </div>
+            <div class="col">
+              <nav class="footer-nav-container">
+                <ul class="footer-nav">
+                  <li><a href="#">About Me</a></li>
+                  <li><a href="#">The Goal</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+      
+          <div class="second-wrap">
+            <div class="col">
+              <div class="text">
+                <h3>Results not guaranteed</h3>
+                <p>Individual weight loss results may vary. This website is intended to build a community of like minded people, coming together to create accountability tools.  It should not be construed as diet advice.</p>
+              </div>
+            </div>
+            <div class="col">
+               <div class="wrapper-btn">
+                <a class="btn" href="#">Become a Member</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-line">
+          <div class="inner">
+            <div class="copyright">
+              <p>© OnPlan 2021</p>
+              <ul class="links-nav">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="by">
+              <p>Dallas WordPress Development: <a href="#">Web Loft Designs</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- ================================================== -->
+  <!-- This part is for including in html only, not for WP -->
+  <!-- ================================================== -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//nwbp.devbucket.me/wp-content/plugins/gravityforms/js/gravityforms.min.js"></script>
+  <script src="//nwbp.devbucket.me/wp-content/plugins/gravityforms/js/jquery.json.min.js"></script>
+  <script id='theme-init-js-extra'>
+    const theme = {
+      'url': 'file:' === location.protocol ? '' : location.pathname.startsWith( '/www/' ) ? '/www/' : '/',
+      'ajaxUrl': '\/wp-admin\/admin-ajax.php',
+      'ajaxNonce': 'd0b7158aec',
+      'googleMapsApiKey': 'AIzaSyC1BgSVg5b7vMGqbjalTl_0Rb9LmsrMpWE'
+    };
+    const theme_i18n = { 'more': 'View More', 'less': 'View Less' };
+  </script>
+  <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+  <!-- This part is for including in html only, not for WP -->
+  <!-- ================================================== -->
+  <script src="js/init.js"></script>
+</body>
+</html>

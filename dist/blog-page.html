@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <script>
+    ( function( a, b, c, d ) {
+      c = '';
+      for ( let i = 0; i < b; i++ ) {
+        if ( 'fontLoaderCss' === localStorage.key( i ).substring( 0, 13 ) ) {
+          c += "\r\n" + localStorage.getItem( localStorage.key( i ) );
+        }
+      }
+
+      if ( c ) {
+        d = a.createElement( 'style' );
+        d.rel = 'stylesheet';
+        a.head.appendChild( d );
+        d.textContent = c;
+      }
+    } )( document, localStorage.length );
+  </script>
+  <link rel="stylesheet" href="css/styles.css" id="theme-styles-css">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Your Organization Name",
+      "url": "http://www.example.com",
+      "logo": "http://www.example.com/images/logo.png",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-111-111-1111",
+          "contactType": "customer service"
+        }
+      ],
+      "sameAs": [
+        "http://www.facebook.com/your-profile",
+        "http://www.twitter.com/yourProfile",
+        "http://plus.google.com/your_profile"
+      ]
+    }
+  </script>
+</head>
+<body class="">
+  <div class="container">
+    <aside class="menu-wrap" aria-hidden="true">
+    
+      <ul class="main-nav mobile-nav mobile-nav-authorized">
+        <li><a href="about-page.html">About Me</a></li>
+        <li><a href="#">The Goal</a></li>
+        <li><a href="faq-page.html">FAQ</a></li>
+        <li><a href="blog-page.html">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="sing-in-link"><a href="#">Sign In</a></li>
+        <li class="btn-link"><a href="#">Become a Member</a></li>
+      </ul>
+    
+      <button class="close-button" id="close-button">Close Menu</button>
+    </aside>
+    <div class="content-wrap">
+      
+      
+      <header class="header header-authorized">
+        <div id="sticky-header" class="unfixed">
+            <div class="row">
+              <div class="inner">
+                <div class="logo">
+                  <a href="/">
+                    <img src="images/logo.png" alt="">
+                  </a>
+                </div>
+      
+                <div class="nav-menu">
+                  <nav class="main-nav-container">
+                  <ul class="main-nav header-nav">
+                    <li><a href="about-page.html">About Me</a></li>
+                    <li><a href="#">The Goal</a></li>
+                    <li><a href="faq-page.html">FAQ</a></li>
+                    <li><a href="blog-page.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>               
+                      <div class="avatar">
+                        <div class="avatar-preview">
+                          <img src="images/avatar.png" alt="" />
+                        </div>
+                        <div class="avatar-dropdown">
+                          <ul>
+                            <li><a href="#">Member Dashboard</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Logout</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <button class="menu-toggle" id="open-button">Menu</button>
+              </div>
+            </div>
+      
+      
+            <div class="row">
+              <div class="inner">
+                <nav class="second-nav-container">
+                  <ul class="second-nav">
+                    <li><a href="#">Member Dashboard</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+        </div>
+      </header>
+      <main class="main">
+        
+<div class="breadcrumbs">
+  <div class="inner">
+    <span>
+      <a href="#">Home page</a> 
+      <span class="breadcrumb_last" aria-current="page">
+        Blog
+      </span>
+    </span>
+  </div>
+</div>
+
+<section class="section-blog-page">
+    <div class="inner">
+        <h1 class="title">Blog</h1>
+        <div class="cols">
+            <div class="col">
+                <ul class="list">
+                    <li>
+                        <a href="blog-detail.html">
+                            <div class="img">
+                                <img src="images/section-blog-page-img1.png" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <p class="data">Posted - February 24, 2021</p>
+                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-dev-detail.html">
+                            <div class="img">
+                                <img src="images/section-blog-page-img2.png" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <p class="data">Posted - February 24, 2021</p>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-main-dev.html">
+                            <div class="img">
+                                <img src="images/section-blog-page-img3.png" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <p class="data">Posted - February 24, 2021</p>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img">
+                                <img src="images/section-blog-page-img4.png" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <p class="data">Posted - February 24, 2021</p>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="section-access section-access-form">
+                                <div class="access access-form form-blog">
+
+  <div class="gf_browser_chrome gform_wrapper "
+       id="gform_wrapper_54">  
+    <form method="post" enctype="multipart/form-data" id="gform_54"
+          class=""
+          action="/">
+      
+      <div class="gform_body">
+        <ul class="gform_fields top_label form_sublabel_below description_below">
+          
+                                                  
+                                                  <li class="gfield  test-class gfield_contains_required  field_sublabel_below field_description_below  gfield_visibility_visible"> 
+                                                    <label class="gfield_label" for="input_54_1">
+                                                      Search<span class="gfield_required">*</span>
+                                                    </label>
+                                                    <div class="ginput_container ginput_container_text">
+                                                      <input
+                                                              name="input_1"
+                                                              id="input_54_1"
+                                                              type="text"
+                                                              value=""
+                                                              class="medium"
+                                                              placeholder=""
+                                                              aria-required="true"
+                                                              aria-invalid="false"
+                                                      > 
+                                                    </div>
+                                                  </li>
+                                                  
+                                                  <li class="gfield  test-class gfield_contains_required  field_sublabel_below field_description_below  gfield_visibility_visible">
+                                                    <label class="gfield_label" for="input_54_2">
+                                                      Stay Connected<span class="gfield_required">*</span>
+                                                    </label>
+                                                    <div class="ginput_complex ginput_container ginput_container_email">
+                                                        <input
+                                                                name="input_2"
+                                                                id="input_54_2"
+                                                                type="email" value=""
+                                                                class="medium"
+                                                                placeholder="Email"
+                                                                aria-required="true"
+                                                                aria-invalid="false"
+                                                        > 
+                                                    </div>
+                                                  </li>
+                                                          
+        </ul>
+      </div>
+                                          <div class="gform_footer top_label">
+                                          
+                                              <input type='submit' class='gform_button button' value='Subscribe by Email'
+                                                     onclick='if(window["gf_submitting_54"]){return false;}  window["gf_submitting_54"]=true;  '
+                                                     onkeypress='if( event.keyCode === 13 ){ if(window["gf_submitting_54"]){return false;} window["gf_submitting_54"]=true;  jQuery("#gform_54").trigger("submit",[true]); }'>
+                                          
+                                            <input type='hidden' class='gform_hidden' name='is_submit_54' value='1'>
+                                            <input type='hidden' class='gform_hidden' name='gform_submit' value='54'>
+                                            <input type='hidden' class='gform_hidden' name='gform_unique_id' value=''>
+                                            <input type='hidden' class='gform_hidden' name='state_54'
+                                                   value='WyJbXSIsIjI4ZTYyMGI3NzdjMzJjM2JkN2YyNzZkNzZlMWNhNWIzIl0='>
+                                            <input type='hidden' class='gform_hidden' name='gform_target_page_number_54'
+                                                   id='gform_target_page_number_54'
+                                                   value='0'>
+                                            <input type='hidden' class='gform_hidden' name='gform_source_page_number_54'
+                                                   id='gform_source_page_number_54'
+                                                   value='1'>
+                                            <input type='hidden' name='gform_field_values' value=''>
+                                          </div>
+    </form>
+  </div>
+                                </div>
+                                <div class="wrapper links-wrapper">
+                                <div class="social-links col-social-links">
+                                    <a class="instagram" href="#"><img src="images/instagram.svg" alt="" /></a>
+                                    <a class="facebook" href="#"><img src="images/facebook.svg" alt="" /></a>
+                                    <a class="linkedin" href="#"><img src="images/linkedin.svg" alt="" /></a>
+                                </div>
+                                </div>
+                            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      </main>
+      
+      <footer class="footer">
+        <div class="inner">
+          <h2 class="title">Lorem ipsum dolor sit amet</h2>
+          <div class="form">
+      
+        <div class="gf_browser_chrome gform_wrapper "
+             id="gform_wrapper_55">  
+          <form method="post" enctype="multipart/form-data" id="gform_55"
+                class=""
+                action="/">
+            
+            <div class="gform_body">
+              <ul class="gform_fields top_label form_sublabel_below description_below">
+                        
+                        <li class="gfield  gf_left_half gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible"> 
+                          <label class="gfield_label" for="input_55_1">
+                            <span class="gfield_required">*</span>
+                          </label>
+                          <div class="ginput_container ginput_container_text">
+                            <input
+                                    name="input_1"
+                                    id="input_55_1"
+                                    type="text"
+                                    value=""
+                                    class=""
+                                    placeholder="Name"
+                                    aria-required="true"
+                                    aria-invalid="false"
+                            > 
+                          </div>
+                        </li>
+                        
+                        <li class="gfield  gf_right_half gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
+                          <label class="gfield_label" for="input_55_2">
+                            <span class="gfield_required">*</span>
+                          </label>
+                          <div class="ginput_complex ginput_container ginput_container_email">
+                              <input
+                                      name="input_2"
+                                      id="input_55_2"
+                                      type="email" value=""
+                                      class=""
+                                      placeholder="Email"
+                                      aria-required="true"
+                                      aria-invalid="false"
+                              > 
+                          </div>
+                        </li>
+                        
+                        <li class="gfield  test-class gfield_contains_required  field_sublabel_below field_description_below hidden_label gfield_visibility_visible"> 
+                          <label class="gfield_label" for="input_55_3">
+                            <span class="gfield_required">*</span>
+                          </label>
+                          <div class="ginput_container ginput_container_textarea">
+                        		<textarea
+                                    name="input_3"
+                                    id="input_55_3"
+                                    class="textarea medium"
+                                    placeholder="Message"
+                                    aria-required="true"
+                                    aria-invalid="false"
+                                    rows="10"
+                                    cols="50"
+                            ></textarea>
+                              <div class="charleft ginput_counter warningTextareaInfo">1 of  max characters</div>
+                          </div>
+                        </li>
+              </ul>
+            </div>
+                  <div class="gform_footer top_label">
+                  
+                      <input type='submit' class='gform_button button' value='What’s on your mind?'
+                             onclick='if(window["gf_submitting_55"]){return false;}  window["gf_submitting_55"]=true;  '
+                             onkeypress='if( event.keyCode === 13 ){ if(window["gf_submitting_55"]){return false;} window["gf_submitting_55"]=true;  jQuery("#gform_55").trigger("submit",[true]); }'>
+                  
+                    <input type='hidden' class='gform_hidden' name='is_submit_55' value='1'>
+                    <input type='hidden' class='gform_hidden' name='gform_submit' value='55'>
+                    <input type='hidden' class='gform_hidden' name='gform_unique_id' value=''>
+                    <input type='hidden' class='gform_hidden' name='state_55'
+                           value='WyJbXSIsIjI4ZTYyMGI3NzdjMzJjM2JkN2YyNzZkNzZlMWNhNWIzIl0='>
+                    <input type='hidden' class='gform_hidden' name='gform_target_page_number_55'
+                           id='gform_target_page_number_55'
+                           value='0'>
+                    <input type='hidden' class='gform_hidden' name='gform_source_page_number_55'
+                           id='gform_source_page_number_55'
+                           value='1'>
+                    <input type='hidden' name='gform_field_values' value=''>
+                  </div>
+          </form>
+        </div>
+          </div>
+          <div class="wrap">
+            <div class="col">
+              <div class="logo">
+                  <img src="images/logo-footer.png" alt="" />
+              </div>
+            </div>
+            <div class="col">
+              <nav class="footer-nav-container">
+                <ul class="footer-nav">
+                  <li><a href="#">About Me</a></li>
+                  <li><a href="#">The Goal</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+      
+          <div class="second-wrap">
+            <div class="col">
+              <div class="text">
+                <h3>Results not guaranteed</h3>
+                <p>Individual weight loss results may vary. This website is intended to build a community of like minded people, coming together to create accountability tools.  It should not be construed as diet advice.</p>
+              </div>
+            </div>
+            <div class="col">
+               <div class="wrapper-btn">
+                <a class="btn" href="#">Become a Member</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-line">
+          <div class="inner">
+            <div class="copyright">
+              <p>© OnPlan 2021</p>
+              <ul class="links-nav">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="by">
+              <p>Dallas WordPress Development: <a href="#">Web Loft Designs</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- ================================================== -->
+  <!-- This part is for including in html only, not for WP -->
+  <!-- ================================================== -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//nwbp.devbucket.me/wp-content/plugins/gravityforms/js/gravityforms.min.js"></script>
+  <script src="//nwbp.devbucket.me/wp-content/plugins/gravityforms/js/jquery.json.min.js"></script>
+  <script id='theme-init-js-extra'>
+    const theme = {
+      'url': 'file:' === location.protocol ? '' : location.pathname.startsWith( '/www/' ) ? '/www/' : '/',
+      'ajaxUrl': '\/wp-admin\/admin-ajax.php',
+      'ajaxNonce': 'd0b7158aec',
+      'googleMapsApiKey': 'AIzaSyC1BgSVg5b7vMGqbjalTl_0Rb9LmsrMpWE'
+    };
+    const theme_i18n = { 'more': 'View More', 'less': 'View Less' };
+  </script>
+  <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+  <!-- This part is for including in html only, not for WP -->
+  <!-- ================================================== -->
+  <script src="js/init.js"></script>
+</body>
+</html>

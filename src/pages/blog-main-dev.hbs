@@ -1,0 +1,855 @@
+---
+title: Blog Detail (public)
+---
+
+{{>breadcrumbs parents="Blog"}}
+
+<section class="section-blog-main">
+    <div class="wrapper">
+        <img class="object-fit object-fit-cover" src="{{root}}images/bgi-blog-main-dev.png" alt="" />
+    </div>
+    <div class="inner">
+        <div class="col">
+            <div class="text">
+                <h1 class="title">Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit sodales fringilla lectus</p>
+            </div>
+            <div class="form">
+                {{#> gform-form
+                showError=false
+                showConfirmation=false
+                }}
+                    {{#> gform-body showError=showError}}
+                        {{> gform-email
+                        showError=showError
+                        customClass="test-class"
+                        hideLabel=false
+                        required=true
+                        fieldSize="medium"
+                        placeholderText="Email"
+                        enableConfirmation=false
+                        enterEmailLabel=""
+                        confirmEmailLabel=""
+                        }}
+                    {{/gform-body}}
+                    {{> gform-footer
+                    type="button"
+                    text="Subscribe"
+                    }}
+                {{/gform-form}}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-tabs section-blog-page tabs-main-blog">
+    <div class="inner">
+        <div class="services">
+            <div class="wrap">
+                <div class="title-holder">
+                    <h2 class="title">Topics</h2>
+                </div>
+                <ul class="tabs-nav">
+                    <li>Most Recent</li>
+                    <li>Inspiration</li>
+                    <li>Latest News</li>
+                    <li>Random Thoughts</li>
+                    <li>Our Tribe</li>
+                </ul>
+                <div class="tabs">
+                    <div class="tab">
+                        <div class="col">
+                            <ul class="list">
+                                <li>
+                                    <a href="{{root}}blog-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img1.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="section-access section-access-form">
+                                <div class="access access-form form-blog">
+                                {{#> gform-form
+                                    showError=false
+                                    showConfirmation=false
+                                }}
+                                    {{#> gform-body showError=showError}}
+
+                                        {{> gform-singleLineText
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Search"
+                                        required=true
+                                        typeTextOrPassword="text"
+                                        fieldSize="medium"
+                                        }}
+                                        {{> gform-email
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Stay Connected"
+                                        required=true
+                                        fieldSize="medium"
+                                        placeholderText="Email"
+                                        enableConfirmation=false
+                                        enterEmailLabel=""
+                                        confirmEmailLabel=""
+                                        }}
+                                                
+                                    {{/gform-body}}
+                                    {{> gform-footer
+                                        type="button"
+                                        text="Subscribe by Email"
+                                    }}
+                                {{/gform-form}}
+                                </div>
+                                <div class="wrapper links-wrapper">
+                                <div class="social-links col-social-links">
+                                    <a class="instagram" href="#"><img src="images/instagram.svg" alt="" /></a>
+                                    <a class="facebook" href="#"><img src="images/facebook.svg" alt="" /></a>
+                                    <a class="linkedin" href="#"><img src="images/linkedin.svg" alt="" /></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="col">
+                            <ul class="list">
+                                <li>
+                                    <a href="{{root}}blog-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img1.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - July 24, 2021</p>
+                                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="section-access section-access-form">
+                                <div class="access access-form form-blog">
+                                {{#> gform-form
+                                    showError=false
+                                    showConfirmation=false
+                                }}
+                                    {{#> gform-body showError=showError}}
+
+                                        {{> gform-singleLineText
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Search"
+                                        required=true
+                                        typeTextOrPassword="text"
+                                        fieldSize="medium"
+                                        }}
+                                        {{> gform-email
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Stay Connected"
+                                        required=true
+                                        fieldSize="medium"
+                                        placeholderText="Email"
+                                        enableConfirmation=false
+                                        enterEmailLabel=""
+                                        confirmEmailLabel=""
+                                        }}
+                                                
+                                    {{/gform-body}}
+                                    {{> gform-footer
+                                        type="button"
+                                        text="Subscribe by Email"
+                                    }}
+                                {{/gform-form}}
+                                </div>
+                                <div class="wrapper links-wrapper">
+                                <div class="social-links col-social-links">
+                                    <a class="instagram" href="#"><img src="images/instagram.svg" alt="" /></a>
+                                    <a class="facebook" href="#"><img src="images/facebook.svg" alt="" /></a>
+                                    <a class="linkedin" href="#"><img src="images/linkedin.svg" alt="" /></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="col">
+                            <ul class="list">
+                                <li>
+                                    <a href="{{root}}blog-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img1.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - September 14, 2021</p>
+                                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="section-access section-access-form">
+                                <div class="access access-form form-blog">
+                                {{#> gform-form
+                                    showError=false
+                                    showConfirmation=false
+                                }}
+                                    {{#> gform-body showError=showError}}
+
+                                        {{> gform-singleLineText
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Search"
+                                        required=true
+                                        typeTextOrPassword="text"
+                                        fieldSize="medium"
+                                        }}
+                                        {{> gform-email
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Stay Connected"
+                                        required=true
+                                        fieldSize="medium"
+                                        placeholderText="Email"
+                                        enableConfirmation=false
+                                        enterEmailLabel=""
+                                        confirmEmailLabel=""
+                                        }}
+                                                
+                                    {{/gform-body}}
+                                    {{> gform-footer
+                                        type="button"
+                                        text="Subscribe by Email"
+                                    }}
+                                {{/gform-form}}
+                                </div>
+                                <div class="wrapper links-wrapper">
+                                <div class="social-links col-social-links">
+                                    <a class="instagram" href="#"><img src="images/instagram.svg" alt="" /></a>
+                                    <a class="facebook" href="#"><img src="images/facebook.svg" alt="" /></a>
+                                    <a class="linkedin" href="#"><img src="images/linkedin.svg" alt="" /></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="col">
+                            <ul class="list">
+                                <li>
+                                    <a href="{{root}}blog-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img1.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - June 20, 2021</p>
+                                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="section-access section-access-form">
+                                <div class="access access-form form-blog">
+                                {{#> gform-form
+                                    showError=false
+                                    showConfirmation=false
+                                }}
+                                    {{#> gform-body showError=showError}}
+
+                                        {{> gform-singleLineText
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Search"
+                                        required=true
+                                        typeTextOrPassword="text"
+                                        fieldSize="medium"
+                                        }}
+                                        {{> gform-email
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Stay Connected"
+                                        required=true
+                                        fieldSize="medium"
+                                        placeholderText="Email"
+                                        enableConfirmation=false
+                                        enterEmailLabel=""
+                                        confirmEmailLabel=""
+                                        }}
+                                                
+                                    {{/gform-body}}
+                                    {{> gform-footer
+                                        type="button"
+                                        text="Subscribe by Email"
+                                    }}
+                                {{/gform-form}}
+                                </div>
+                                <div class="wrapper links-wrapper">
+                                <div class="social-links col-social-links">
+                                    <a class="instagram" href="#"><img src="images/instagram.svg" alt="" /></a>
+                                    <a class="facebook" href="#"><img src="images/facebook.svg" alt="" /></a>
+                                    <a class="linkedin" href="#"><img src="images/linkedin.svg" alt="" /></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="col">
+                            <ul class="list">
+                                <li>
+                                    <a href="{{root}}blog-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img1.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - May 29, 2021</p>
+                                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-dev-detail.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{root}}blog-main-dev.html">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="text">
+                                                <p class="data">Posted - February 24, 2021</p>
+                                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                                <a href="#" class="link">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="section-access section-access-form">
+                                <div class="access access-form form-blog">
+                                {{#> gform-form
+                                    showError=false
+                                    showConfirmation=false
+                                }}
+                                    {{#> gform-body showError=showError}}
+
+                                        {{> gform-singleLineText
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Search"
+                                        required=true
+                                        typeTextOrPassword="text"
+                                        fieldSize="medium"
+                                        }}
+                                        {{> gform-email
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Stay Connected"
+                                        required=true
+                                        fieldSize="medium"
+                                        placeholderText="Email"
+                                        enableConfirmation=false
+                                        enterEmailLabel=""
+                                        confirmEmailLabel=""
+                                        }}
+                                                
+                                    {{/gform-body}}
+                                    {{> gform-footer
+                                        type="button"
+                                        text="Subscribe by Email"
+                                    }}
+                                {{/gform-form}}
+                                </div>
+                                <div class="wrapper links-wrapper">
+                                <div class="social-links col-social-links">
+                                    <a class="instagram" href="#"><img src="images/instagram.svg" alt="" /></a>
+                                    <a class="facebook" href="#"><img src="images/facebook.svg" alt="" /></a>
+                                    <a class="linkedin" href="#"><img src="images/linkedin.svg" alt="" /></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        {{>pagination}}
+    </div>
+</section>

@@ -1,0 +1,130 @@
+---
+title: Blog
+---
+
+{{>breadcrumbs }}
+
+<section class="section-blog-page">
+    <div class="inner">
+        <h1 class="title">Blog</h1>
+        <div class="cols">
+            <div class="col">
+                <ul class="list">
+                    <li>
+                        <a href="{{root}}blog-detail.html">
+                            <div class="img">
+                                <img src="{{root}}images/section-blog-page-img1.png" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <p class="data">Posted - February 24, 2021</p>
+                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{root}}blog-dev-detail.html">
+                            <div class="img">
+                                <img src="{{root}}images/section-blog-page-img2.png" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <p class="data">Posted - February 24, 2021</p>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{root}}blog-main-dev.html">
+                            <div class="img">
+                                <img src="{{root}}images/section-blog-page-img3.png" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <p class="data">Posted - February 24, 2021</p>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img">
+                                <img src="{{root}}images/section-blog-page-img4.png" alt="" />
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <p class="data">Posted - February 24, 2021</p>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque fermentum aliquam diam duis nulla.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, sapien vel non leo arcu venenatis...</p>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="section-access section-access-form">
+                                <div class="access access-form form-blog">
+                                {{#> gform-form
+                                    showError=false
+                                    showConfirmation=false
+                                }}
+                                    {{#> gform-body showError=showError}}
+
+                                        {{> gform-singleLineText
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Search"
+                                        required=true
+                                        typeTextOrPassword="text"
+                                        fieldSize="medium"
+                                        }}
+                                        {{> gform-email
+                                        showError=showError
+                                        customClass="test-class"
+                                        hideLabel=false
+                                        labelText="Stay Connected"
+                                        required=true
+                                        fieldSize="medium"
+                                        placeholderText="Email"
+                                        enableConfirmation=false
+                                        enterEmailLabel=""
+                                        confirmEmailLabel=""
+                                        }}
+                                                
+                                    {{/gform-body}}
+                                    {{> gform-footer
+                                        type="button"
+                                        text="Subscribe by Email"
+                                    }}
+                                {{/gform-form}}
+                                </div>
+                                <div class="wrapper links-wrapper">
+                                <div class="social-links col-social-links">
+                                    <a class="instagram" href="#"><img src="images/instagram.svg" alt="" /></a>
+                                    <a class="facebook" href="#"><img src="images/facebook.svg" alt="" /></a>
+                                    <a class="linkedin" href="#"><img src="images/linkedin.svg" alt="" /></a>
+                                </div>
+                                </div>
+                            </div>
+                {{!-- <div class="access">
+                    <div class="text">
+                        <h2>Want to have access to more helpful articles?</h2>
+                        <a href="#" class="btn">Become a Member</a>
+                    </div>
+                </div> --}}
+            </div>
+        </div>
+    </div>
+</section>
