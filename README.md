@@ -1,4 +1,7 @@
-# on-plan-blog
+# On Plan Blog
+
+## Link Preview
+https://viktory-v.github.io/on-plan-blog/
 
 ## Technologies
 - HTML
